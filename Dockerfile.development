@@ -2,3 +2,5 @@
 
 FROM rasa/rasa_nlu:0.11.3-spacy
 MAINTAINER Atchai <enquiries@atchai.com>
+
+COPY ./app/config.json /app/config.json
