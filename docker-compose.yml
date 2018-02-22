@@ -1,0 +1,21 @@
+version: '3'
+
+networks:
+
+  eyewitness-demo-rasa-network:
+    driver: bridge
+
+services:
+
+  rasa-core:
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    volumes:
+      - ./app/config.json:/app/config.json
+    ports:
+      - "7000:7000"
+    networks:
+      - eyewitness-demo-rasa-network
+    tty: true
+    restart: on-failure
