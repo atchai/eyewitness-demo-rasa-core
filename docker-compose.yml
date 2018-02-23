@@ -12,7 +12,7 @@ services:
       context: .
       dockerfile: Dockerfile.development
     volumes:
-      - ./app/config.development.json:/app/config.json
+      - ./app/config/config.development.json:/app/config.json
     ports:
       - "7000:7000"
     networks:
