@@ -1,0 +1,30 @@
+{
+  "project": "eyewitness-demo-development",
+  "pipeline": "spacy_sklearn",
+  "language": "en",
+  "num_threads": 2,
+  "max_training_processes": 1,
+  "path": "./projects",
+  "response_log": null,
+  "log_level": "INFO",
+  "port": 7000,
+  "cors_origins": [],
+  "mitie_file": "./data/total_word_feature_extractor.dat",
+  "storage": "aws",
+  "bucket_name": "rasa-core-development",
+  "aws_region": "eu-west-1",
+  "ner_crf": {
+    "BILOU_flag": false,
+    "features": [
+      ["low", "title", "upper", "pos", "pos2"],
+      ["bias", "low", "word3", "word2", "upper", "title", "digit", "pos", "pos2", "pattern"],
+      ["low", "title", "upper", "pos", "pos2"]],
+    "max_iterations": 50,
+    "L1_c": 1,
+    "L2_c": 1e-3
+  },
+  "intent_classifier_sklearn": {
+    "C": [1, 2, 5, 10, 20, 100],
+    "kernel": "linear"
+  }
+}

@@ -3,4 +3,11 @@
 FROM rasa/rasa_nlu:0.11.3-spacy
 MAINTAINER Atchai <enquiries@atchai.com>
 
-COPY ./app/config.json /app/config.json
+ENV AWS_ACCESS_KEY_ID=AKIAJYIWY5U4SJCIEUMA
+ENV AWS_SECRET_ACCESS_KEY=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
+
+# Copy in our custom config.
+COPY ./app/config.production.json /app/config.json
+
+# Install dependencies required for AWS S3.
+RUN pip install boto3

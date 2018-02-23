@@ -10,6 +10,9 @@
   "port": 7000,
   "cors_origins": [],
   "mitie_file": "./data/total_word_feature_extractor.dat",
+  "storage": "aws",
+  "bucket_name": "rasa-core-production",
+  "aws_region": "eu-west-1",
   "ner_crf": {
     "BILOU_flag": false,
     "features": [
