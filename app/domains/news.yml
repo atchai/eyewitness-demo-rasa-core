@@ -1,0 +1,9 @@
+intents:
+  - submitATip
+  - seeLatestStories
+
+action_factory: remote
+
+actions:
+  - submitATip
+  - seeLatestStories

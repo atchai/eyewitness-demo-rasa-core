@@ -1,0 +1,143 @@
+{
+	"rasa_nlu_data": {
+
+		"common_examples": [
+
+			{
+				"text": "submit a tip",
+	      "intent": "SUBMIT_TIP",
+	      "entities": [{
+	        "start": 9,
+	        "end": 12,
+	        "value": "tip",
+	        "entity": "story"
+				}]
+			},
+
+			{
+				"text": "submit a story",
+	      "intent": "SUBMIT_TIP",
+	      "entities": [{
+	        "start": 9,
+	        "end": 14,
+	        "value": "story",
+	        "entity": "story"
+				}]
+			},
+
+			{
+				"text": "submit an article",
+	      "intent": "SUBMIT_TIP",
+	      "entities": [{
+	        "start": 10,
+	        "end": 17,
+	        "value": "article",
+	        "entity": "story"
+				}]
+			},
+
+			{
+				"text": "submit news",
+	      "intent": "SUBMIT_TIP",
+	      "entities": [{
+	        "start": 7,
+	        "end": 11,
+	        "value": "news",
+	        "entity": "story"
+				}]
+			},
+
+			{
+				"text": "send news",
+	      "intent": "SUBMIT_TIP",
+	      "entities": [{
+	        "start": 5,
+	        "end": 9,
+	        "value": "news",
+	        "entity": "story"
+				}]
+			},
+
+			{
+				"text": "i have news",
+	      "intent": "SUBMIT_TIP",
+	      "entities": [{
+	        "start": 7,
+	        "end": 11,
+	        "value": "news",
+	        "entity": "story"
+				}]
+			},
+
+			{
+				"text": "see latest stories",
+	      "intent": "SEE_LATEST_STORIES",
+	      "entities": [{
+	        "start": 11,
+	        "end": 18,
+	        "value": "stories",
+	        "entity": "story"
+				}]
+			},
+
+			{
+				"text": "see latest articles",
+	      "intent": "SEE_LATEST_STORIES",
+	      "entities": [{
+	        "start": 11,
+	        "end": 19,
+	        "value": "articles",
+	        "entity": "story"
+				}]
+			},
+
+			{
+				"text": "what's new",
+	      "intent": "SEE_LATEST_STORIES",
+				"entities": []
+			},
+
+			{
+				"text": "what's up",
+	      "intent": "SEE_LATEST_STORIES",
+				"entities": []
+			},
+
+			{
+				"text": "what's going on",
+	      "intent": "SEE_LATEST_STORIES",
+				"entities": []
+			},
+
+			{
+				"text": "what's happening",
+	      "intent": "SEE_LATEST_STORIES",
+	      "entities": []
+			},
+
+			{
+				"text": "latest news",
+	      "intent": "SEE_LATEST_STORIES",
+	      "entities": [{
+	        "start": 7,
+	        "end": 11,
+	        "value": "news",
+	        "entity": "story"
+				}]
+			},
+
+			{
+				"text": "news",
+	      "intent": "SEE_LATEST_STORIES",
+	      "entities": [{
+	        "start": 0,
+	        "end": 4,
+	        "value": "news",
+	        "entity": "story"
+				}]
+			}
+
+		]
+
+	}
+}

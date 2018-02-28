@@ -8,6 +8,7 @@ ENV AWS_SECRET_ACCESS_KEY=hf59XowPnPdXofTpNfTM5nfyCI/ZBI5WJLaw6pvV
 
 # Copy in our custom config.
 COPY ./app/config/config.production.json /app/config.json
+COPY ./app/interpreters/news.md /app/data/news.md
 
 # Install dependencies required for AWS S3.
 RUN pip install boto3
